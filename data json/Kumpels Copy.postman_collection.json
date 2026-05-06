@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "bb7ae46d-aac7-4c05-b7fb-5392bb1840c1",
+		"name": "Kumpels Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32693571"
+	},
+	"item": [
+		{
+			"name": "Example-alergy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSwgdmFsaWRhdGlvbi5yZWFkLCB2YWxpZGF0aW9uLnVwZGF0ZSwgcHJlRGlzcGF0Y2gucmVhZCwgcHJlRGlzcGF0Y2gudXBkYXRlLCBlbmxpc3RtZW50LnJlYWQsIGVubGlzdG1lbnQudXBkYXRlLCBkZWxpdmVyeUFjY2Vzc1BoYXJtYWN5LnJlYWQsIGRlbGl2ZXJ5QWNjZXNzUGhhcm1hY3kudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS5yZWFkLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS51cGRhdGUsIGRlbGl2ZXJ5QWNjZXNzTnVyc2luZy5yZWFkLCBkZWxpdmVyeUFjY2Vzc051cnNpbmcudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNOdXJzaW5nLnJlYWQsIGFjY2Vzc1RvUmV0dXJuc051cnNpbmcudXBkYXRlLCBhbmFseXRpY3MucmVhZCwgY3VycmVudFN0YXR1cy5yZWFkIiwibmFtZSI6IlNVUEVSVVNFUiIsImlhdCI6MTcyMDUzNDc5MSwiZXhwIjoxNzIxMTM5NTkxfQ.shwcfrGs4LEEkBlA6UhlSnNTEFCH7zpUYG_iX8adz48",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"completed\",\r\n  \"data\": [\r\n    {\r\n      \"id_patient\": \"538513643\",\r\n      \"medication_code\": \"10030017\",\r\n      \"dose\": \"10.00\",\r\n      \"dose_unit\": \"mg/mL\",\r\n      \"frecuency\": \"8\",\r\n      \"route\": \"Intravenosa\",\r\n      \"date_start\": \"07-08-2020\",\r\n      \"date_end\": \"08-08-2025\",\r\n      \"kumpels_code\": \"330814003\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3000/v1/patients/medications/create-medication"
+			},
+			"response": []
+		},
+		{
+			"name": "Example-duplicity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSwgdmFsaWRhdGlvbi5yZWFkLCB2YWxpZGF0aW9uLnVwZGF0ZSwgcHJlRGlzcGF0Y2gucmVhZCwgcHJlRGlzcGF0Y2gudXBkYXRlLCBlbmxpc3RtZW50LnJlYWQsIGVubGlzdG1lbnQudXBkYXRlLCBkZWxpdmVyeUFjY2Vzc1BoYXJtYWN5LnJlYWQsIGRlbGl2ZXJ5QWNjZXNzUGhhcm1hY3kudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS5yZWFkLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS51cGRhdGUsIGRlbGl2ZXJ5QWNjZXNzTnVyc2luZy5yZWFkLCBkZWxpdmVyeUFjY2Vzc051cnNpbmcudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNOdXJzaW5nLnJlYWQsIGFjY2Vzc1RvUmV0dXJuc051cnNpbmcudXBkYXRlLCBhbmFseXRpY3MucmVhZCwgY3VycmVudFN0YXR1cy5yZWFkIiwibmFtZSI6IlNVUEVSVVNFUiIsImlhdCI6MTcyMDUzNDc5MSwiZXhwIjoxNzIxMTM5NTkxfQ.shwcfrGs4LEEkBlA6UhlSnNTEFCH7zpUYG_iX8adz48",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"completed\",\r\n    \"data\": [\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"medication_code\": \"10030017\",\r\n            \"dose\": \"10.00\",\r\n            \"dose_unit\": \"mg/mL\",\r\n            \"frecuency\": \"8\",\r\n            \"route\": \"Intravenosa\",\r\n            \"date_start\": \"09-08-2021\",\r\n            \"date_end\": \"08-08-2024\",\r\n            \"kumpels_code\": \"782033008\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3000/v1/patients/medications/create-medication"
+			},
+			"response": []
+		},
+		{
+			"name": "create-paraclinical",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSwgdmFsaWRhdGlvbi5yZWFkLCB2YWxpZGF0aW9uLnVwZGF0ZSwgcHJlRGlzcGF0Y2gucmVhZCwgcHJlRGlzcGF0Y2gudXBkYXRlLCBlbmxpc3RtZW50LnJlYWQsIGVubGlzdG1lbnQudXBkYXRlLCBkZWxpdmVyeUFjY2Vzc1BoYXJtYWN5LnJlYWQsIGRlbGl2ZXJ5QWNjZXNzUGhhcm1hY3kudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS5yZWFkLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS51cGRhdGUsIGRlbGl2ZXJ5QWNjZXNzTnVyc2luZy5yZWFkLCBkZWxpdmVyeUFjY2Vzc051cnNpbmcudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNOdXJzaW5nLnJlYWQsIGFjY2Vzc1RvUmV0dXJuc051cnNpbmcudXBkYXRlLCBhbmFseXRpY3MucmVhZCwgY3VycmVudFN0YXR1cy5yZWFkIiwibmFtZSI6IlNVUEVSVVNFUiIsImlhdCI6MTcyMDUzNDc5MSwiZXhwIjoxNzIxMTM5NTkxfQ.shwcfrGs4LEEkBlA6UhlSnNTEFCH7zpUYG_iX8adz48"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": {\r\n        \"code\": \"registered\"\r\n    },\r\n    \"params_unit\": {\r\n        \"size_unit\": \"m\",\r\n        \"current_weight_unit\": \"kg\",\r\n        \"usual_weight_unit\": \"kg\",\r\n        \"body_temperature_unit\": \"C\",\r\n        \"blood_pressure_unit\": \"S/D\",\r\n        \"glucose_level_unit\": \"mg/dL\",\r\n        \"INR_unit\": \"segundos\",\r\n        \"PT_unit\": \"segundos\",\r\n        \"AST_unit\": \"U/L\",\r\n        \"ALT_unit\": \"U/L\",\r\n        \"creatinine_unit\": \"mg/dL\",\r\n        \"heart_rate_unit\": \"bpm\",\r\n        \"respiratory_rate_unit\": \"rpm\",\r\n        \"pain_unit\": \"score\"\r\n    },\r\n    \"params_category\": {\r\n        \"size_category\": \"vital-signs\",\r\n        \"current_weight_category\": \"vital-signs\",\r\n        \"usual_weight_category\": \"vital-signs\",\r\n        \"body_temperature_category\": \"vital-signs\",\r\n        \"blood_pressure_category\": \"vital-signs\",\r\n        \"glucose_level_category\": \"vital-signs\",\r\n        \"INR_category\": \"vital-signs\",\r\n        \"PT_category\": \"vital-signs\",\r\n        \"AST_category\": \"vital-signs\",\r\n        \"ALT_category\": \"vital-signs\",\r\n        \"creatinine_category\": \"vital-signs\",\r\n        \"heart_rate_category\": \"vital-signs\",\r\n        \"respiratory_rate_category\": \"vital-signs\",\r\n        \"pain_category\": \"vital-signs\",\r\n        \"id_patient_category\": \"n/a\"\r\n    },\r\n    \"paraclinicalData\": [\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"size\": 1.61,\r\n            \"current_weight\": 67,\r\n            \"current_weight_date\": \"09-03-2021 00:00\",\r\n            \"usual_weight\": 67,\r\n            \"body_temperature\": 36,\r\n            \"body_temperature_date\": \"10-03-2021 11:00\",\r\n            \"blood_pressure\": \"120/80\",\r\n            \"blood_pressure_date\": \"10-03-2021 11:00\",\r\n            \"heart_rate\": 100,\r\n            \"heart_rate_date\": \"10-03-2021 11:00\",\r\n            \"respiratory_rate\": 20,\r\n            \"respiratory_rate_date\": \"10-03-2021 11:00\",\r\n            \"pain\": 5,\r\n            \"pain_date\": \"10-03-2021 11:00\",\r\n            \"glucose_level\": 80,\r\n            \"glucose_level_date\": \"10-03-2021 11:00\",\r\n            \"INR\": 0.8,\r\n            \"INR_date\": \"10-03-2021 11:00\",\r\n            \"PT\": 10,\r\n            \"PT_date\": \"11-03-2021 11:00\",\r\n            \"AST\": 2,\r\n            \"AST_date\": \"11-03-2021 11:00\",\r\n            \"ALT\": 2,\r\n            \"ALT_date\": \"11-03-2021 11:00\",\r\n            \"creatinine\": 7.79,\r\n            \"creatinine_date\": \"11-03-2021 11:00\",\r\n            \"report_date\": \"19-10-2020 16:51\"\r\n        },\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"size\": null,\r\n            \"current_weight\": 67,\r\n            \"current_weight_date\": \"\",\r\n            \"usual_weight\": null,\r\n            \"body_temperature\": 35,\r\n            \"body_temperature_date\": \"11-03-2021 11:00\",\r\n            \"blood_pressure\": \"110/70\",\r\n            \"blood_pressure_date\": \"11-03-2021 11:00\",\r\n            \"heart_rate\": null,\r\n            \"heart_rate_date\": \"\",\r\n            \"respiratory_rate\": null,\r\n            \"respiratory_rate_date\": \"\",\r\n            \"pain\": null,\r\n            \"pain_date\": \"\",\r\n            \"glucose_level\": 90,\r\n            \"glucose_level_date\": \"11-03-2021 11:00\",\r\n            \"INR\": 0.7,\r\n            \"INR_date\": \"11-03-2021 11:00\",\r\n            \"PT\": null,\r\n            \"PT_date\": \"\",\r\n            \"AST\": 30,\r\n            \"AST_date\": \"12-03-2021 11:00\",\r\n            \"ALT\": 10,\r\n            \"ALT_date\": \"12-03-2021 11:00\",\r\n            \"creatinine\": 9.99,\r\n            \"creatinine_date\": \"12-03-2021 11:00\",\r\n            \"report_date\": \"17-12-2020 07:47\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3000/v1/patients/paraclinicals/create-paraclinical"
+			},
+			"response": []
+		},
+		{
+			"name": "sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"userTry@gmail.com\",\r\n    \"password\": \"UuserPrueba123&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/auth/sign-in"
+			},
+			"response": []
+		},
+		{
+			"name": "sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type_identification\":\"C.C\",\r\n    \"name\": \"userPruebatres\",\r\n    \"identification\":\"08238807\",\r\n    \"email\": \"userTry3@gmail.com\",\r\n    \"phone\": \"435543435\",\r\n    \"password\":\"User3Prueba123&\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/auth/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "get-patients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBQYXRpZW50LmF1dG9fYXNzaWduLCBQYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkIiwiaWF0IjoxNzE3MzUzMDA2LCJleHAiOjE3MTczNTkwMDZ9.4GF6zAxziBE-0aYtGCopr7e55yBVuFA3OKnhQyB2bEQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1,\r\n    \"pageSize\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/patients/get-patients"
+			},
+			"response": []
+		},
+		{
+			"name": "create-patient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSwgdmFsaWRhdGlvbi5yZWFkLCB2YWxpZGF0aW9uLnVwZGF0ZSwgcHJlRGlzcGF0Y2gucmVhZCwgcHJlRGlzcGF0Y2gudXBkYXRlLCBlbmxpc3RtZW50LnJlYWQsIGVubGlzdG1lbnQudXBkYXRlLCBkZWxpdmVyeUFjY2Vzc1BoYXJtYWN5LnJlYWQsIGRlbGl2ZXJ5QWNjZXNzUGhhcm1hY3kudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS5yZWFkLCBhY2Nlc3NUb1JldHVybnNQaGFybWFjeS51cGRhdGUsIGRlbGl2ZXJ5QWNjZXNzTnVyc2luZy5yZWFkLCBkZWxpdmVyeUFjY2Vzc051cnNpbmcudXBkYXRlLCBhY2Nlc3NUb1JldHVybnNOdXJzaW5nLnJlYWQsIGFjY2Vzc1RvUmV0dXJuc051cnNpbmcudXBkYXRlLCBhbmFseXRpY3MucmVhZCwgY3VycmVudFN0YXR1cy5yZWFkIiwibmFtZSI6IlNVUEVSVVNFUiIsImlhdCI6MTcyMDUzNDc5MSwiZXhwIjoxNzIxMTM5NTkxfQ.shwcfrGs4LEEkBlA6UhlSnNTEFCH7zpUYG_iX8adz48"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"t_identification\": \"CC\",\r\n        \"identification\": \"538513643\",\r\n        \"last_name\": \"Prueba\",\r\n        \"second_last_name\": \"Prueba\",\r\n        \"first_name\": \"Luis\",\r\n        \"second_name\": \"Alberto\",\r\n        \"id_history_clinic\": \"538513643\",\r\n        \"episode\": \"3000\",\r\n        \"bed\": \"CT-UCI26\",\r\n        \"sex\": \"M\",\r\n        \"birth_date\": \"1946-08-13\",\r\n        \"date_of_entry\": \"2020-08-05\",\r\n        \"discharge_date\": \"\",\r\n        \"doctor_name\": \"ANDRES BELTRAN\",\r\n        \"medical_center\": \"UCI-ADULTOS\",\r\n        \"p_diagnostic\": \"C884 - 2019-03-19 - Confirmado\",\r\n        \"s_diagnostic\": \"U071;K591;J440;I10X - 2020-08-03;2020-08-03;2020-08-06;2018-10-08 - Confirmado;Sin confirmar;Confirmado;Confirmado\",\r\n        \"description_allergies\": \"PENICILINAS\",\r\n        \"id_allergies\": \"S01XA20\",\r\n        \"specialty\": \"example specialty\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/patients/create-patients"
+			},
+			"response": []
+		},
+		{
+			"name": "get-pharmacist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBQYXRpZW50LmF1dG9fYXNzaWduLCBQYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkIiwiaWF0IjoxNzE3MzcwNjI1LCJleHAiOjE3MTczNzY2MjV9.x0ybEiJBTGy__t86-TocviwK1B0b6f3jZ6cwL_6GhvA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"624d7799-4015-46c9-a066-868211f6c69f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/pharmacist/get-pharmacists"
+			},
+			"response": []
+		},
+		{
+			"name": "Example-dosage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSIsIm5hbWUiOiJTVVBFUlVTRVIiLCJpYXQiOjE3MjA0MDE0ODgsImV4cCI6MTcyMTAwNjI4OH0.two6F3a8UuhVNjW_ZamCzx2EYVJ-M3phkZb4TQVlUpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"completed\",\r\n    \"data\": [\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"medication_code\": \"370361001\",\r\n            \"dose\": \"10.00\",\r\n            \"dose_unit\": \"mg/mL\",\r\n            \"frecuency\": \"8\",\r\n            \"route\": \"Intravenosa\",\r\n            \"date_start\": \"07-08-2020\",\r\n            \"date_end\": \"08-08-2025\",\r\n            \"kumpels_code\": \"783049000\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/patients/medications/create-medication"
+			},
+			"response": []
+		},
+		{
+			"name": "Example-tocixity-medication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSIsIm5hbWUiOiJTVVBFUlVTRVIiLCJpYXQiOjE3MjA0MDE0ODgsImV4cCI6MTcyMTAwNjI4OH0.two6F3a8UuhVNjW_ZamCzx2EYVJ-M3phkZb4TQVlUpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"completed\",\r\n    \"data\": [\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"medication_code\": \"370361001\",\r\n            \"dose\": \"10.00\",\r\n            \"dose_unit\": \"mg/mL\",\r\n            \"frecuency\": \"10\",\r\n            \"route\": \"Intravenosa\",\r\n            \"date_start\": \"07-08-2020\",\r\n            \"date_end\": \"08-08-2025\",\r\n            \"kumpels_code\": \"1231467005\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/patients/medications/create-medication"
+			},
+			"response": []
+		},
+		{
+			"name": "Example-Interaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA2MzAyNDM4LWM0MWEtNDBmMC05Nzk5LWE4ZjU3MGRkNmQzYyIsInJvbGUiOiJTdXBlclVzZXIiLCJwZXJtaXNzaW9ucyI6IlBoYXJtYWNldXRpY2FsTWFuYWdlci5jcmVhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci51cGRhdGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5kZWxldGUsIFBoYXJtYWNldXRpY2FsTWFuYWdlci5yZWFkLCBwYXRpZW50LmF1dG9fYXNzaWduLCBwYXRpZW50LmFzc2lnbiwgcGF0aWVudC5jcmVhdGUsIHBhdGllbnQudXBkYXRlLCBwYXRpZW50LmRlbGV0ZSwgcGF0aWVudC5yZWFkLCBwYXJhY2xpbmljYWwuY3JlYXRlLCBwYXJhY2xpbmljYWwucmVhZCwgbWVkaWNhdGlvbi5jcmVhdGUsIG1lZGljYXRpb24ucmVhZCwgYWxlcnQucmVhZCwgYWxlcnQuc2F2ZSIsIm5hbWUiOiJTVVBFUlVTRVIiLCJpYXQiOjE3MjA0MDE0ODgsImV4cCI6MTcyMTAwNjI4OH0.two6F3a8UuhVNjW_ZamCzx2EYVJ-M3phkZb4TQVlUpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"STATUS\": \"COMPLETED\",\r\n//     \"DATA\": [\r\n//         {\r\n//             \"ID_PATIENT\": \"538513643\",\r\n//             \"MEDICATION_CODE\": \"370361001\",\r\n//             \"DOSE\": \"10.00\",\r\n//             \"DOSE_UNIT\": \"MG/ML\",\r\n//             \"FRECUENCY\": \"8\",\r\n//             \"ROUTE\": \"INTRAVENOSA\",\r\n//             \"DATE_START\": \"07-08-2020\",\r\n//             \"DATE_END\": \"08-08-2025\",\r\n//             \"KUMPELS_CODE\": \"782099009\"\r\n//         }\r\n//     ]\r\n// }\r\n\r\n{\r\n    \"status\": \"completed\",\r\n    \"data\": [\r\n        {\r\n            \"id_patient\": \"538513643\",\r\n            \"medication_code\": \"370361001\",\r\n            \"dose\": \"10.00\",\r\n            \"dose_unit\": \"mg/mL\",\r\n            \"frecuency\": \"8\",\r\n            \"route\": \"Intravenosa\",\r\n            \"date_start\": \"07-08-2020\",\r\n            \"date_end\": \"08-08-2025\",\r\n            \"kumpels_code\": \"782099009\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/v1/patients/medications/create-medication"
+			},
+			"response": []
+		}
+	]
+}
