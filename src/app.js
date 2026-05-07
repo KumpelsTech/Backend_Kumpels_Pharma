@@ -16,7 +16,7 @@ app.disable('x-powered-by');
 app.use(cookieParser());
 
 
-const allowedOrigins = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+const allowedOrigins = ['http://localhost:5173', 'http://127.0.0.1:5173', process.env.ROUTES_ORIGIN];
 
 // app.use(cors({
 //   origin: (origin, callback) => {
